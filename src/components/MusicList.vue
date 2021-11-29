@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import MusicNow from '../components/MusicNow.vue'
-import axios from 'axios'
+import MusicNow from '../components/MusicNow.vue';
+import axios from 'axios';
 
 
 
@@ -38,9 +38,9 @@ export default {
           .get(this.apiUrl)
           .then((result) => {
               this.allMusic = result.data.response;
-              console.log(result.data.response);
+            //   console.log(result.data.response);
           })
-      }
+      },
   }
 }
 </script>
